@@ -1,0 +1,4 @@
+[${vm_name}]
+%{ for instance in vm_instances ~}
+${instance.network_interface.0.nat_ip_address}
+%{ endfor ~}
